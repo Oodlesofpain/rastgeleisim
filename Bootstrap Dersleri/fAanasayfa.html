@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fAanasayfa</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bticons/font/bootstrap-icons.css">
+
+    <style>
+        .navbar-custom {
+            background-color: #976bc9;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            font-family: fantasy;
+            color: #f5e7a4;
+        }
+
+        .nav-link:hover {
+            color: #00d990;
+        }
+
+        .nav-link:focus {
+            color: #380b5b;
+        }
+
+        footer {
+            background-color: #976bc9;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        .container .col {
+            text-align: center;
+        }
+
+        .d-flex img {
+            margin: 0 5px;
+        }
+
+        .buttons {
+            margin-top: 10px;
+        }
+
+        .btn-arama {
+            color: #f5e7a4;
+            border-color: #f5e7a4;
+        }
+
+        .btn-arama:hover {
+            color: #380b5b;
+            border-color: #380b5b;
+        }
+
+        .footer-container h5 {
+            margin-bottom: 10px;
+        }
+
+        .footer-container .social-buttons button {
+            background-color: transparent;
+            border: none;
+            color: #f5e7a4;
+            margin: 0 5px;
+        }
+
+        .footer-container .social-buttons button:hover {
+            color: #00d990;
+        }
+
+        .btn-outline-success {
+            color: #000000;
+            background-color: #00d990;
+        }
+
+        .btn-outline-success:hover {
+            background-color: #380b5b;
+            color: #f5e7a4;
+        }
+
+        .h3{
+            color: #00d990;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: aliceblue">
+    <nav class="navbar navbar-expand-lg navbar-custom p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="fAanasayfa.html">
+                <img src="img/logo.png" alt="" height="120">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="fAanasayfa.html"><i class="bi bi-house-door"></i> Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fAürünler.html"><i class="bi bi-handbag"></i> Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person"></i> Üye Ol</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Aradığınız ürünü yazınız"
+                        aria-label="Arama" style="width: 500px;">
+                    <button class="btn btn-arama" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container  p-4" style="color: #fab800;">
+        <h2>KAMPANYALI ÜRÜNLER</h2>
+
+        <div class="container-fluid" style="color: #000000; font-size: 1.5rem; background-color: antiquewhite;">
+            <p>Tüfeklerde %20'ye Varan İndirimler!!! En kaliteli tüfek modellerimizde büyük indirim fırsatlarını kaçırmayın!</p> 
+            <p> Tabancalarda %15 İndirim!!! Popüler tabanca modellerimizde özel yaz sezonu indirimleri. Hemen satın alın! Stoklarla sınırlıdır!
+            </p>
+        </div>
+       
+        <div class="row justify-content-between"> 
+            <div class="col-lg" style="height: 500px; width: 500px;">
+                <div class="card align-items-center">
+                    <img src="img/deagle.jpg" class="card-img-top" alt="deagle"style="height: 200px; width: 300px;">
+                        <div class="card-body text-center">
+                        <h3 class="card-title">DESERT EAGLE</h3>
+                        <p class="card-text">357'lik, 41'lik, 44'lük, 440 Cor-bon ve 50 AE kalibrelik mermi
+                            kullanan modelleri bulunur. 357 kalibrelik versiyonu 9,41'lik ve 44'lüğü 8, 440 Cor-bon ve
+                            50 AE (Action Express) kullanan modeli de 7  mermi alır. Kullandığı 
+                            mermilerden dolayı çok güçlü birtabancadır. Geri tepmesi çok yüksektir.</p>
+                        <p class="card-text">
+                        <h4><del>3999TL</del> 3399TL</p></h4>
+                        <div class="d-flex justify-content-center mb-3">
+                            <button type="button" class="btn btn-outline-success me-3"><i class="bi bi-cart"></i> SATIN
+                                AL</button>
+                            <button type="button" class="btn btn-outline-primary me-3"><i class="bi bi-basket"></i>
+                                SEPETE EKLE</button>
+                            <button type="button" class="btn btn-outline-secondary" ><i class="bi bi-grid"></i> DİĞER
+                                ÜRÜNLER</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg " style="height: 500px; width: 500px;">
+                <div class="card align-items-center">
+                    <img src="img/m4.jpg" class="card-img-top" alt="m4" height="200" width="200">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">M4</h3>
+                        <p class="card-text">M4, tam otomatik, yarı otomatik ve 3'lü yarı otomatik gibi üç ayrı
+                            mermi atış sistemine sahiptir. Oyuncak silahın üstündeki ve namlusunun arkasındaki bu
+                            tırtıklı bölüm silaha değişik nişangahlar takılması için yapılmıştır. Bu sistem
+                            sayesinde lazer, bombaatar, gece görüş, aydınlatma feneri, lazer işaretleme
+                            takılabilir.</p>
+                        <p class="card-text">
+                        <h4><del>9999TL</del> 7999TL</p>
+                        </h4>
+                        <div class="d-flex justify-content-center mb-3">
+                            <button type="button" class="btn btn-outline-success me-3"><i class="bi bi-cart"></i> SATIN
+                                AL</button>
+                            <button type="button" class="btn btn-outline-primary me-3"><i class="bi bi-basket"></i>
+                                SEPETE EKLE</button>
+                            <button type="button" class="btn btn-outline-secondary" ><i class="bi bi-grid" ></i> DİĞER
+                                ÜRÜNLER</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-4">
+        <a href="fAürünler.html"><h4>DİĞER ÜRÜNLER</h4></a>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="img/awp.webp" class="card-img-top" alt="AWP" style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">AWP</h5>
+                        <p class="card-text">Yüksek hassasiyetli keskin nişancı tüfeği</p>
+                        <button class="btn btn-primary">SEPETE EKLE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card ">
+                    <img src="img/ak47.jpg" class="card-img-top" alt="AK47" style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">AK47</h5>
+                        <p class="card-text">Efsanevi saldırı tüfeği</p>
+                        <button class="btn btn-primary">SEPETE EKLE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="img/kelebek.png" class="card-img-top" alt="Kelebek Bıçağı" style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Kelebek Bıçağı</h5>
+                        <p class="card-text">Hızlı, şık ve keskin</p>
+                        <button class="btn btn-primary">SEPETE EKLE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="img/cz.webp" class="card-img-top" alt="CZ75" style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">CZ75</h5>
+                        <p class="card-text">Çok yönlü yarı otomatik tabanca</p>
+                        <button class="btn btn-primary">SEPETE EKLE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid footer-container">
+            <div class="row">
+                <div class="col text-start">
+                    <h5>İletişim Bilgileri</h5>
+                    <p>SAHABİYE MAH. METE CAD. KONAK SOK. PINAR APT. NO:16B </p>
+                    <p>Meram / Konya </p>
+                    <p>Zip/Posta Kodu: 42040</p>
+                    <p>Telefon Numarası: (0352) 231 1338</p>
+                    <p>Ülke: Türkiye</p>
+                </div>
+                <div class="col text-center">
+                    <h5>Sosyal Medya</h5>
+                    <div class="social-buttons">
+                        <button><i class="bi bi-facebook"></i></button>
+                        <button><i class="bi bi-youtube"></i></button>
+                        <button><i class="bi bi-twitter"></i></button>
+                    </div>
+                </div>
+                <div class="col text-end">
+                    <h5>Telif Hakkı</h5>
+                    <p>© 2025 Akyün OnlyGun.</p>
+                    <p>Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

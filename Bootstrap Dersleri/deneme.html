@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bticons/font/bootstrap-icons.css">
+    <style>        
+    .navbar-brand {
+        font-size: 1.5rem; /* Font boyutunu buradan ayarlayabilirsiniz 1 rem 16 piksel*/
+        /* font-weight: bold ; İsteğe bağlı: Metni kalın yapar */
+        font-style: initial;
+        color: rgb(65, 18, 193);
+    }
+    .btn-mavi {
+            background-color: rgb(65, 18, 193);
+            color: white;
+        }
+        .btn-mavi:hover {
+            background-color: rgb(65, 18, 193); /* fare üstüne gelince rengi ne olacak */
+            color: white;
+        }
+    .btn-gri {
+            background-color: white;
+            color: gray;
+        }
+
+    #nav { 
+            background-color: rgb(65, 18, 193); 
+        }
+    .nav-link{
+            color:white;
+            font-size: 1.2rem;
+        }
+        .nav-link:hover {
+            background-color: rgb(65, 18, 193); 
+            color: rgb(255, 255, 4);
+        }
+        .nav-link:active, .nav-link:focus  {
+           background-color: rgb(65, 18, 193); 
+           color: rgb(220, 14, 27);
+        }
+    
+    #navbutton{
+            color:white;
+        }
+        #navbutton:hover {
+            background-color: rgb(65, 18, 193); 
+            color: rgb(255, 255, 4);
+        }
+        #navbutton:active, #navbutton:focus{
+           background-color: rgb(65, 18, 193); 
+           color: rgb(220, 14, 27);
+        }
+      .list-group {
+    list-style-type: none; 
+        }
+        .card {
+    text-align: center; /* Tüm içeriği ortalamak için */
+        }     
+
+    .card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+        }
+
+    .card-text {
+    margin-bottom: 10px; /* Üst ve alt boşluk eklemek için isteğe bağlı */
+        }
+      footer {
+            background-color: rgb(65, 18, 193);
+            padding: 20px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<!-- Margin (m) nesneler arası dış boşluğu belirler 4 piksel (4px)boşluk bırakır -->
+<!-- Padding (p) nesneler arası iç boşluğu belirler -->
+
+<body>
+        <div class="container-fluid pt-2 mb-3">
+            <div class="row">
+                <div class ="col-3">
+                    <a class="navbar-brand" href="#">E-Commerce</a> 
+                </div>
+                <div class ="col-6">
+                    <form class="d-flex">
+                    <input class="form-control me-1" type="search" placeholder="Anahtar Kelime" aria-label="Arama Kutusu" style="width: 600px;">
+                        <button class="btn btn-mavi " type="submit">
+                        <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <div class="container">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <button type="button" class="btn btn-gri btn-outline-secondary flex-fill mx-1 ">
+                            <i class="bi bi-person-fill"></i> Hesabım
+                          </button>
+                          <button type="button" class="btn btn-gri btn-outline-secondary flex-fill mx-1 ">
+                            <i class="bi bi-heart-fill"></i> Listem
+                          </button>
+                          <button type="button" class="btn btn-gri btn-outline-secondary flex-fill mx-1 ">
+                            <i class="bi bi-cart-fill"></i> Sepetim
+                          </button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid p-2" id="nav">
+          <ul class="nav justify-content-start">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Elektronik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Moda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kozmetik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Spor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Market</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kitap</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbutton">
+                Diğer Kategoriler
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ev Eşyası</a></li>
+                <li><a class="dropdown-item" href="#">Oyuncak</a></li>
+                <li><a class="dropdown-item" href="#">Hobi</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="container mt-2 p-2" style="border: 1px solid #4112c1;">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <ul class="list-group">
+                <li><a class="list-group-item list-group-item-action" href="#">Elektronik</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#">Moda</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#">Kozmetik</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#">Spor</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#">Market</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#">Kitap</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#">Oyuncak</a></li>
+              </ul>
+            </div>
+            <div class="col-md-8">
+              <div class="container">
+                <img src="img/asus.jpg" class="img-fluid" alt="Asus Laptop">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container p-2">
+          <h3 style="font-family: Arial, sans-serif;">Son Eklenenler</h3>
+          <div class="row">
+            <div class="col-3">
+              <div class="card">
+                  <p class="card-text">Apple Watch</p>
+                <img src="img/apple1.jpeg" height="280" class="card-img-top" alt="#">
+                  <div class="card-body"></div>
+              </div>
+              <div class="card">
+              <p class="card-text"><del>6.9999 TL</del> 6.599 TL <a href="#" class="btn btn-gri"><i class="bi bi-basket"></i></a> <a href="#" class="btn btn-gri"><i class="bi bi-heart"></i></a></p>
+              
+            </div>
+          </div>
+              <div class="col-3">
+                <div class="card">
+                    <p class="card-text">Apple Watch</p>
+                  <img src="img/apple2.jpeg" height="280" class="card-img-top" alt="#">
+                    <div class="card-body"></div>
+                </div>
+                <div class="card">
+                <p class="card-text"><del>6.9999 TL</del> 6.599 TL <a href="#" class="btn btn-gri"><i class="bi bi-basket"></i></a> <a href="#" class="btn btn-gri"><i class="bi bi-heart"></i></a></p>
+                
+              </div>
+            </div>
+              <div class="col-3">
+                <div class="card">
+                    <p class="card-text">Apple Watch</p>
+                  <img src="img/apple3.jpeg" height="280" class="card-img-top" alt="#">
+                    <div class="card-body"></div>
+                </div>
+                <div class="card">
+                <p class="card-text"><del>6.9999 TL</del> 6.599 TL <a href="#" class="btn btn-gri"><i class="bi bi-basket"></i></a> <a href="#" class="btn btn-gri"><i class="bi bi-heart"></i></a></p>
+                
+              </div>
+            </div>
+              <div class="col-3">
+                  <div class="card">
+                      <p class="card-text">Apple Watch</p>
+                    <img src="img/apple4.jpeg" height="280" class="card-img-top" alt="#">
+                      <div class="card-body"></div>
+                  </div>
+                  <div class="card">
+                  <p class="card-text"><del>6.9999 TL</del> 6.599 TL <a href="#" class="btn btn-gri"><i class="bi bi-basket"></i></a> <a href="#" class="btn btn-gri"><i class="bi bi-heart"></i></a></p>
+                  
+                </div>
+              </div>
+          </div>
+      </div>
+      
+      <footer>
+        <div class="container p-4">
+          <div class="row">
+            <div class="col text-start">
+              <table>
+                <tr>
+                    <td>
+                        <input type="email" placeholder="Email" name="Mail" id="email-input">
+                    </td>
+                    <td>
+                        <i class="btn btn-secondary" id="aboneol">Abone Ol</i>
+                    </td>
+                </tr>
+              </table>
+            </div>
+              <div class="col text-end">
+                <button>
+                    <i class="bi bi-facebook"></i>
+                </button>
+                <button>
+                    <i class="bi bi-youtube"></i>
+                </button>
+                <button>
+                    <i class="bi bi-twitter"></i>
+                </button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <p>Tüm Hakları Saklıdır © 2025</p>
+            </div>
+          </div>
+        </div>
+      </footer>    
+    
+            <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
